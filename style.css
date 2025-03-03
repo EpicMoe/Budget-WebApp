@@ -1,0 +1,12 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+} 
+.app {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
