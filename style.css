@@ -1,12 +1,116 @@
-/* Reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-} 
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+input {
+	border: none;
+	font: inherit;
+}
+button {
+	background: none;
+	border: none;
+	font: inherit;
+}
+/* BASE STYLEs */
+body {
+	font-family: "Inter", sans-serif;
+	background: rgb(225, 227, 230);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .app {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
+	background: #fff;
+	width: 400px;
+	height: 490px;
+	border-radius: 8px;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+}
+
+.top {
+	background: #f2f2f2;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.first-heading {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 3px;
+}
+.balance-number {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.overview {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	display: flex;
+	margin-top: 30px;
+}
+.section {
+	flex: 1;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section:nth-child(2) {
+	border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+.second-heading {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 3px;
+}
+
+.form {
+	width: 80%;
+	margin: 0 auto;
+    margin-top: auto;
+}
+.input {
+	width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+.label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+.btn {
+    padding: 15px 25px;
+    cursor: pointer;
+    background-color: #0072e4;
+    width: 100%;
+    border-radius: 5000px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition:all 0.3s;
+}
+.btn:hover{
+    background: #0068cf;
+}
+
+
+
