@@ -17,20 +17,17 @@ ul {
 	list-style: none;
 }
 
-
 /* KEYFRAMES */
-@keyframes fade-in{
-	0%{
+@keyframes fade-in {
+	0% {
 		opacity: 0;
 		transform: translateY(15px) scale(0.8);
 	}
-	100%{
+	100% {
 		opacity: 1;
 		transform: translateY(0) scale(1);
 	}
 }
-
-
 
 /* BASE STYLEs */
 body {
@@ -170,7 +167,6 @@ body {
 	border-right: 5px solid red;
 }
 
-
 .transaction__btn {
 	position: absolute;
 	top: 50%;
@@ -179,7 +175,7 @@ body {
 	background: #000;
 	width: 100%;
 	height: 100%;
-	color: rgba(255,255,255,0.85);
+	color: rgba(255, 255, 255, 0.85);
 	transition: all 0.3s;
 	cursor: pointer;
 }
@@ -187,3 +183,35 @@ body {
 	transform: translate(-50%, -50%);
 }
 
+@media (max-width: 800px) {
+	.wrapper {
+		flex-direction: column;
+		height: initial;
+		row-gap: 20px;
+		margin: 50px 0;
+	}
+
+	.app {
+		height: 490px;
+	}
+	.transactions-section {
+		margin-left: 0;
+	}
+}
+@media (max-width: 500px) {
+	.wrapper {
+		width: 100%;
+		margin: 0;
+	}
+	.app {
+		width: 100%;
+		border-radius: 0;
+	}
+
+	.transactions-section {
+		width: 100%;
+	}
+	.third-heading{
+		text-align: center;
+	}
+}
