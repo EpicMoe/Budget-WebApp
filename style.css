@@ -18,6 +18,20 @@ ul {
 }
 
 
+/* KEYFRAMES */
+@keyframes fade-in{
+	0%{
+		opacity: 0;
+		transform: translateY(15px) scale(0.8);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+
+
 /* BASE STYLEs */
 body {
 	font-family: "Inter", sans-serif;
@@ -31,6 +45,7 @@ body {
 .wrapper {
 	display: flex;
 	height: 490px;
+	animation: fade-in 0.5s;
 }
 
 .app {
@@ -171,3 +186,4 @@ body {
 .transaction:hover .transaction__btn {
 	transform: translate(-50%, -50%);
 }
+
