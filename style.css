@@ -215,3 +215,10 @@ body {
 		text-align: center;
 	}
 }
+
+.balance-number--special{
+	color: red;
+	font-size: 50px;
+	font-weight: 800;
+
+}
