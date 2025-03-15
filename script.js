@@ -7,7 +7,7 @@ const formEl = document.querySelector(".form");
 const inputDescriptionEl = document.querySelector(".input--description");
 const inputAmountEl = document.querySelector(".input--amount");
 
-formEl.addEventListener("submit", function (event) {
+function submitHandler(event) {
 	//  prevent a default behaver
 	event.preventDefault();
 
@@ -51,7 +51,7 @@ formEl.addEventListener("submit", function (event) {
 
 	//  make red if balance negative
 	income - expenses < 0 ? (balanceNumberEl.style.color = "red") : "";
-});
+}
 
 function clickHandler(event) {
 	//event delegation
@@ -88,3 +88,4 @@ function clickHandler(event) {
 }
 
 transactionEl.addEventListener("click", clickHandler);
+formEl.addEventListener("submit", submitHandler);
